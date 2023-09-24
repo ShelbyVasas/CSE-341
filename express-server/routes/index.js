@@ -1,13 +1,12 @@
 // Importing express module
-const express = require("express")
+import { name } from "../controllers/nameController.js"
+import express from "express";
 const app = express()
 
 // Handling GET / request
-app.use("/", (req, res, next) => {
-	res.send("Shelby Vasas")
-})
+app.get("/", name)
 
-// Server setup
+// Server setupls
 app.listen(3000, () => {
 	console.log("Server is Running")
 })
