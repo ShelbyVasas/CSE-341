@@ -7,3 +7,30 @@ GET http://localhost:3000/contacts?id=650fc60c8c5002c9561d20b4
 GET http://localhost:3000/contacts?id=650fc6628c5002c9561d20b6
 ###
 GET http://localhost:3000/contacts?id=650fc6a48c5002c9561d20b7
+
+###
+POST http://localhost:3000/contacts
+content-type: application/json
+
+{
+  "firstName": "Ellie",
+  "lastName": "Vasas",
+  "email": "elliev@test.com",
+  "favoriteColor": "Orange",
+  "birthday": "02/16/2003"
+}
+
+###
+PUT http://localhost:3000/contacts?id=6517bae23152e531938e0c7c
+content-type: application/json
+
+{
+  "firstName": "Eleanor",
+  "lastName": "Vasas",
+  "email": "eleanorv@test.com",
+  "favoriteColor": "Orange",
+  "birthday": "02/16/2003"
+}
+
+###
+DELETE http://localhost:3000/contacts?id=6517bae23152e531938e0c7c
