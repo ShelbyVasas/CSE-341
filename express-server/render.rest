@@ -1,0 +1,36 @@
+// LOCALHOST
+###
+GET https://express-server-32gh.onrender.com/contacts
+###
+GET https://express-server-32gh.onrender.com/contacts?id=650fc60c8c5002c9561d20b4
+###
+GET https://express-server-32gh.onrender.com/contacts?id=650fc6628c5002c9561d20b6
+###
+GET https://express-server-32gh.onrender.com/contacts?id=650fc6a48c5002c9561d20b7
+
+###
+POST https://express-server-32gh.onrender.com/contacts
+content-type: application/json
+
+{
+  "firstName": "Ellie",
+  "lastName": "Vasas",
+  "email": "elliev@test.com",
+  "favoriteColor": "Orange",
+  "birthday": "02/16/2003"
+}
+
+###
+PUT https://express-server-32gh.onrender.com/contacts?id=6517c0fab82d33e838b82503
+content-type: application/json
+
+{
+  "firstName": "Eleanor",
+  "lastName": "Vasas",
+  "email": "eleanorv@test.com",
+  "favoriteColor": "Orange",
+  "birthday": "02/16/2003"
+}
+
+###
+DELETE https://express-server-32gh.onrender.com/contacts?id=6517c0fab82d33e838b82503
