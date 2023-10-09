@@ -6,7 +6,7 @@
     "description": ""
   },
   "host": "express-server-32gh.onrender.com",
-  "basePath": "/contacts",
+  "basePath": "/",
   "tags": [
     {
       "name": "",
